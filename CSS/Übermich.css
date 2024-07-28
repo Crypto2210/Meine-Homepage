@@ -1,0 +1,287 @@
+body {
+    animation: erscheinen 1s ease-in-out forwards;
+    background: linear-gradient(to right, rgb(42, 51, 208), rgb(42, 93, 205), rgb(0, 205, 255));
+    font-family: Arial, 'Times New Roman', serif;
+    text-align: center;
+    margin: 0px;
+}
+
+h2 {
+    text-shadow: 0px 0px 30px black;
+    font-size: 40px;
+}
+
+a {
+    background-color: rgba(0, 255, 255, 0.2);
+    color: rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 20px aqua;
+    border-radius: 12px;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 20px;
+}
+
+a:hover {
+    background-color: rgba(0, 200, 255, 0.4);
+    color: white;
+    box-shadow: 0px 0px 50px aqua;
+    border-radius: 12px;
+    font-size: 30px;   
+}
+
+p {
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    margin-left: 27vw;
+    margin-right: 27vw;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    place-items: center; 
+    flex-wrap: wrap;    
+    }
+
+main {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 150px;
+
+    img {
+        width: 300px;
+        height: 420px;
+        object-fit: cover;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+}
+
+footer {
+    background: linear-gradient(to right, rgb(169, 85, 248), rgb(105, 39, 204), rgb(59, 34, 159));
+    box-shadow: 0px 0px 50px blueviolet;
+    width: 100%;
+    height: 270px;
+    text-align: center;
+
+    a {
+        background-color: inherit;
+        color: white;
+        box-shadow: 0px 0px 0px blueviolet;
+        padding: 0px;
+    }
+
+    a:hover {
+        background-color: inherit;
+        color: white;
+        box-shadow: 0px 0px 0px blueviolet;
+        text-decoration: underline;
+    }
+}
+
+.Eltern_conainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Unity_Bild {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.Hacken_Bild {
+    width: 700px;
+    object-fit: cover;
+    margin-bottom: 0px;
+}
+
+@media(max-width: 1300px) {
+    p {
+        margin-left: 16vw;
+        margin-right: 16vw;
+    }
+}
+
+@media(max-width: 840px) {
+    a {
+        font-size: 20px;
+    }
+
+    a:hover {
+        font-size: 20px;
+    }
+
+    p {
+        margin-left: 12vw;
+        margin-right: 12vw;
+    }
+
+    main {
+        img {
+            width: 200px;
+            height: 300px;
+        }
+    }
+
+    footer {
+        height: 220px;
+        margin-top: 50px;
+
+        a {
+            font-size: 20px;
+        }
+
+        a:hover {
+            font-size: 20px;
+        }   
+    }
+
+    .Hacken_Bild {
+        width: 450px;
+        height: 226px;
+
+    }
+}
+
+@media(max-width: 650px) {
+    h2 {
+        width: 100vw;
+        text-align: center;
+    }
+
+    header {
+        a {
+            font-size: 15px;
+            padding: 10px;
+        }
+
+        a:hover {
+            font-size: 15px;
+        }
+    }
+
+    main {
+        margin-top: 50px;
+        margin-bottom: 100px;
+
+        img {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+    }
+
+    footer {    
+        a {
+            font-size: 20px;
+        }
+
+        a:hover {
+            font-size: 20px;
+        }
+    }
+
+    .Hacken_Bild {
+        margin-bottom: 0px;
+    }
+}
+
+
+@media(max-width: 500px) {
+    p {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    footer {
+        height: 187px;
+        margin-top: 100px;
+        a {
+            font-size: 15px;
+        }
+
+        a:hover {
+            font-size: 15px;           
+            text-decoration: underline;
+        }
+    }
+
+    .Hacken_Bild {
+        width: 350px;
+        height: 177px;
+    }
+}
+
+@media(max-width: 450px) {
+    main {
+        margin-top: 300px;
+
+        img {
+            width: 160px;
+            height: 240px;
+        }
+    }
+
+    .links {
+        display: flex;
+        position: absolute;
+        text-align: center;
+        flex-direction: column;
+        top: 130px;
+        left: 20px; 
+        gap: 20px;
+    }
+
+    .Unity_Bild {
+        width: 230px;
+        height: 230px;
+    }
+
+    .Hacken_Bild {
+        width: 300px;
+        height: 153px;
+    }
+}
+
+@media(max-width: 383px) {
+    .links {
+        top: 180px;
+    }
+}
+
+@media(max-width: 350px) {
+    main {
+        img{
+            width: 120px;
+            height: 180px;
+        }
+    }
+
+    .Unity_Bild {
+        width: 200px;
+        height: 200px;
+    }
+
+    .Hacken_Bild {
+        width: 230px;
+        height: 116px;
+    }
+}
+
+@media(max-width: 299px) {
+    footer {
+        height: 205px;
+    }
+}
+
+@media(max-width: 255px) {
+    body {
+        display: none;
+    }
+}
+
+@keyframes erscheinen {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

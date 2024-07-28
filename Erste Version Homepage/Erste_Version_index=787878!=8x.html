@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Adrians Homepage</title>
+
+    <style>
+      body {
+        background-color: rgb(98, 154, 207);
+        margin: 0px;
+        overflow-x: hidden;
+        
+        
+      }
+      .web-title {
+        font-size: 110px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #000;
+        padding-left: 15vw;
+        
+
+      }
+
+      .to_small{
+        display: none;
+      }
+
+      .img_container {
+        display: flex;
+        width: 70vw;
+        gap: 100px;
+      }
+
+      .summary-object {
+        background-color: rgb(98, 154, 207);
+        font-size: 40px;
+        text-align: center;
+        border-top: 1px solid; 
+        border-bottom: 1px solid;
+        border-color: #000;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        margin-left: 15vw;
+        margin-right: 15vw;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .Text {
+        font-size: 20px;
+        width: 830px;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 35px;
+        padding-left: 15vw;
+      }
+
+      .Adrian_einleitung_Bild{
+        width: 375px;
+        height: 500px;
+        position: absolute;
+        top: 250px;
+        right: 170px;
+        margin-bottom: 30px;
+        object-fit: cover;
+        filter: brightness(0.73);
+        
+      }
+
+      .Adrian_Mama_Bild {
+        width: 310px;
+        height: 400px;
+        margin-bottom: 50px;
+        object-fit: cover;
+      }
+
+      .Adrian_Papa_Bild {
+        height: 400px;
+        width: 310px;
+        margin-bottom: 50px;
+        object-fit: cover;
+        }
+          
+      .Unity_Bild {
+        height: 300px;
+        width: 300px;
+        right: 287px;
+        top: 900px;
+        position: absolute;
+      }
+
+      .Hacken_Bild {
+        height: 450px;
+        padding-left: 200px;
+      }
+
+  
+      .Adrian_Lebenslauf_Bild {
+        height: 460px;
+        position: static;
+        margin-left: 15vw;
+        margin-top: 40px;
+
+      }
+
+      .Lebenlauf_Text{
+        display: inline-block;
+        width: 600px;
+      }
+
+      .project-class{
+        width: 69vw;
+      }
+
+      .fünftes_Spiel{
+        background-color: #e24e4e; 
+        width: 300px;
+      }
+
+      .links{
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+      }
+
+      .links:hover{
+        text-decoration: underline;
+      }
+
+      .Kontakt_Text{
+        width: 400px;
+        padding-left: 45vw;
+      }
+
+      @media (max-width: 1800px) {
+
+       .Adrian_Mama_Bild{
+        left: 767px;
+       }
+
+       .Unity_Bild{
+          left: 1196px;
+        }
+       }
+      
+      @media (max-width: 1700px) {
+
+        .Adrian_einleitung_Bild{
+          left: 1140px;
+        }
+
+        .Adrian_Mama_Bild{
+          right: 780px;
+        }
+
+        .Hacken_Bild{
+          padding-left: 150px;
+        }
+      }
+
+
+
+      @media (max-width: 1600px) {
+        
+        .Adrian_einleitung_Bild{
+          position: static;
+          margin-left: 600px;
+        }
+
+        .Adrian_Mama_Bild{
+          position: static;
+          margin-left: 0px;
+        }
+
+        .Unity_Bild{
+          top: 1500px;
+          left: 1140px;
+        }  
+
+        .Hacken_Bild{
+          padding-left: 100px;
+        }
+      }
+
+      @media (max-width: 1500px) {
+
+        .Unity_Bild{
+          position: static;
+          padding-left: 300px;
+          margin-bottom: 40px;
+        }
+
+        .Hacken_Bild{
+          padding-left: 50px;
+        }
+
+        .Adrian_einleitung_Bild{
+          margin-left: 450px;
+        }
+
+        .Adrian_Lebenslauf_Bild{
+          height: 380px;
+          margin-bottom: 10px;
+          margin-left: 8vw;
+        }
+
+      }
+
+      @media (max-width: 1165px) {
+
+        .web-title{
+          padding-left: 50px;
+        }
+ 
+        .Hacken_Bild{
+          padding-left: 0px;
+        }
+
+        .Unity_Bild{
+
+          padding-left: 250px;
+        }
+
+        .Adrian_einleitung_Bild{
+          margin-left: 300px;
+        }
+
+        .summary-object{
+          margin-left: 0px;
+          margin-right: 0px;
+
+          
+        }
+
+        .Adrian_Lebenslauf_Bild{
+          margin-left: 400px;
+        }
+      }
+
+      @media (max-width: 1030px) {
+
+        .web-title{
+          padding-left: 50px;
+          font-size: 90px;
+        }
+
+        .Text {
+          width: 730px;
+        }
+
+        .Kontakt_Text{
+          width: 400px;
+          padding-left: 40vw;
+        }
+
+        .Adrian_Papa_Bild{
+          margin-bottom: 0px;
+        }
+
+        .img_container{
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        .Hacken_Bild {
+          height: 300px;
+          padding-left: 40px;
+        }
+
+        .Unity_Bild{
+          padding-left: 170px;
+        }
+
+        .Adrian_Lebenslauf_Bild{
+          margin-left: 300px;
+        }
+
+      }
+
+      @media (max-width: 917px) {
+        .Text{
+          padding-left: 100px;
+        }
+
+        .project-class{
+          width: 730px;
+        }
+
+        .Kontakt_Text{
+          padding-left: 40vw;
+        }
+
+        .Adrian_einleitung_Bild{
+          margin-left: 200px;
+        }
+
+        .Adrian_Lebenslauf_Bild {
+          height: 350px;
+        }
+
+      }
+
+      @media (max-width: 875px) {
+
+        .web-title{
+          padding-left: 20px;
+        }
+        
+        .Adrian_einleitung_Bild{
+          margin-left: 150px;
+        }
+        .Text {
+          padding-left: 50px;
+        }
+
+        .Kontakt_Text{
+          padding-left: 35vw;
+        }
+
+      }
+
+      @media (max-width: 811px) {
+
+        .web-title{
+          font-size: 70px;
+        }
+        .Text{
+          width: 660px;
+        }
+
+        .project-class{
+          width: 660px;
+        }
+
+        .Adrian_Lebenslauf_Bild{
+          margin-left: 200px;
+        }
+
+        .Kontakt_Text{
+          width: 400px;
+        }
+
+
+    }
+      @media(max-width: 750px){
+        .Text{
+          width: 85vw;
+        }
+
+        .project-class{
+          width: 85vw;
+        }
+
+        .Adrian_Mama_Bild{
+          width: 270px;
+          height: 355px;
+          margin-bottom: 40px;
+        }
+
+        .Adrian_Papa_Bild{
+          margin-bottom: 20px;
+          width: 270px;
+          height: 355px;
+        }
+
+        .Hacken_Bild{
+          height: 250px;
+        }
+
+        .Unity_Bild{
+          padding-left: 100px;
+        }
+
+        .Adrian_einleitung_Bild{
+           margin-left: 130px;
+           height: 400px;
+           width: 300px;
+        }
+
+        .Kontakt_Text{
+          width: 400px;
+        }
+
+      }
+
+      @media(max-width: 645px){
+
+        .Kontakt_Text{
+          padding-left: 27vw;
+          width: 380px;
+        }
+
+        .Adrian_Lebenslauf_Bild{
+          margin-left: 120px;
+        }
+
+        .Adrian_Mama_Bild{
+          margin-left: 80px;
+        }
+
+        .Adrian_Papa_Bild{
+          margin-left: 80px;
+        }
+
+        .Unity_Bild{
+          padding-left: 0px;
+        }
+
+        .Hacken_Bild{
+          padding-left: 0px;
+        }
+        .web-title{
+          font-size: 60px;
+        }
+      }
+
+      @media(max-width: 570px){
+        .web-title{
+          font-size: 80px;
+        }
+        .Text{
+          width: 82vw;
+        }
+
+        .project-class{
+          width: 82vw;
+        }
+        
+        .Hacken_Bild{
+          height: 180px;
+        }
+        .Adrian_einleitung_Bild{
+          margin-left: 50px;
+        }
+        
+        .Adrian_Mama_Bild{
+          margin-left: 0px;
+        }
+
+        .Adrian_Papa_Bild{
+          margin-left: 0px;
+        }
+        .Kontakt_Text{
+          padding-left: 80px;
+          width: 380px;
+        }
+      }
+
+      @media(max-width: 515px){
+        .Text{
+          padding-left: 45px;
+        }
+
+        .web-title{
+          font-size: 70px;
+
+        }
+
+        .Adrian_Mama_Bild{
+          margin-right: 0px;
+          width: 210px;
+          height: 272px;
+        }
+
+        .Adrian_Papa_Bild{
+          width: 210px;
+          height: 272px;
+        }
+
+        .Adrian_Lebenslauf_Bild{
+          margin-left: 50px;
+        }
+
+      }
+
+      @media(max-width: 445px){
+        .web-title{
+          font-size: 60px;
+        }
+
+        .Text{
+          width: 82vw;
+          padding-left: 35px;
+        }
+
+        .project-class{
+          width: 80vw;
+        }
+
+        .Adrian_einleitung_Bild{
+          height: 320px;
+          width: 240px;
+        }
+
+        .Adrian_Mama_Bild{
+          margin-right: 0px;
+          width: 180px;
+          height: 237px;
+          margin-bottom: 0px;
+        }
+
+        .Adrian_Papa_Bild{
+          margin-top: 0px;
+          width: 180px;
+          height: 237px;
+        }
+
+        .Unity_Bild{
+          width: 250px;
+          height: 250px;
+        }
+        .fünftes_Spiel{
+          width: 240px;
+        }
+      }
+
+      @media(max-width: 380px){
+        
+        .Adrian_einleitung_Bild{
+          width: 210px;
+          height: 280px;
+          margin-left: 35px;
+        }
+
+        .Unity_Bild{
+          width: 200px;
+          height: 200px;
+
+        }
+
+        .Hacken_Bild{
+          height: 150px;
+        }
+
+        .Adrian_Lebenslauf_Bild{
+          height: 300px;
+        }
+
+        .Kontakt_Text{
+          font-size: 17px;
+          padding-left: 30px;
+
+        }
+
+        .Kontakte{
+          font-size: 17px;
+        }
+
+        .web-title{
+          font-size: 54px;
+        }
+      }
+
+      @media(max-width: 340px){
+        .Text{
+          padding-left: 30px;
+        }
+
+        .project-class{
+          width: 250px;
+        }
+
+        .Adrian_einleitung_Bild{
+          width: 174px;
+          height: 232px;
+          margin-left: 35px;
+        }
+
+        .Adrian_Lebenslauf_Bild{
+          height: 260px;
+        }
+
+        .Hacken_Bild{
+          height: 120px;
+        }
+      }
+
+      @media(max-width: 305px){
+        .to_small{
+          display: block;
+          font-size: 13vw;
+          font-weight: bold;
+          background-color: #e24e4e;
+        }
+      }
+       
+
+      @media(max-width: 197px){
+        .to_small{
+          font-size: 11vw;
+          text-align: center;
+        }
+        
+    }
+
+
+
+
+
+    </style>
+  </head>
+
+  <body>
+
+    <div class="web-title">
+      Adrians Homepage
+    </div>
+
+    <div class="to_small">
+      display zu klein!
+    </div>
+    
+    <details open>
+        <summary class="summary-object">Über mich</summary>
+        <img  class="Adrian_einleitung_Bild" src="Einleitungsbild.jpg" alt="Adrians Einleitungsbild">
+        <div class="Text">
+          Mein Name ist Adrian. Ich wurde am 2. Februar 2010 geboren.
+          Ich wuchs in Murg auf und besuchte dort auch den Kindergarten. 2016 bin
+          ich mit meiner Mutter nach Winkel ZH umgezogen. Meine Mutter arbeitet
+          als Buchhalterin bei einer Bank. Mein Vater arbeitet in einem
+          Unternehmen und ist selbstständig. 
+          <br />
+          <br />
+          <div class="img_container">
+            <img
+              src="Adrians und Mamas Bild.jpg"
+              alt="Adrians und Mamas Bild"
+              class="Adrian_Mama_Bild"
+            />
+            
+            <img
+              src="Adrians und Papas Bild.jpg"
+              alt="Adrians und Papas Bild"
+              class="Adrian_Papa_Bild"
+            />
+
+          </div>
+          <br />
+          Ab der 4. Klasse fing ich an, mich für Computer zu
+          Interessieren und habe anfangs der 6. Klasse angefangen zu programmieren.
+          Neben dem Programmieren spiele ich ab und zu gerne Videospiele und
+          mache auch Selbstverteidigung. In der 6. Klasse bin ich in meiner
+          Freizeit Skateboard gefahren. Ich liebe es, über verschiedene Themen,
+          wie Ethik und Wissenschaft mir Gedanken zu machen und zu argumentieren.
+          <br />
+          <br />
+          Meine Lieblingsfächer in der Schule sind Informatik und Mathematik.
+          Meine nicht so beliebten Fächer sind Musik, Tanzen und handwerkliche Fächer wie Basteln,
+          Werken, Nähen und Zeichnen. Meine Stärken sind, dass ich sehr gut in Dingen bin, die ich gerne mache.
+          Ich bin dann sehr ehrgeizig und gebe nicht auf, bis ich die Lösung gefunden habe.
+          Ausserdem habe ich ein gutes technisches Verständnis.
+          <br />
+          <br />       
+          <img
+            src="Unity Bild.jpg"
+            alt="Unity_Bild"
+            class="Unity_Bild"
+          />
+          <img
+            src="Hacken Bild.jpg"
+            alt="Hacken_Bild"
+            class="Hacken_Bild"
+          />
+        </div>     
+         
+      </details>
+      <div class="to_small">
+        display zu klein!
+      </div>
+      <details>
+        <summary class="summary-object">Lebenslauf</summary>
+        <div class="Text Lebenlauf_Text">
+          <div style="font-size: 32px; margin-bottom: 20px;">Schulbildung</div>
+          ab 08/2024 Schulhaus Mettmenriet Bülach, 3. Sekundarschule Niveau A <br>
+          08/2022-07/2024 Schulhaus Mettmenriet Bülach, 1. und 2. Sekundarschule Niveau A <br>
+          08/2016-07/2022 Schulhaus Grossacher Winkel, Primarschule 1.-6. Klasse <br>
+          <br />
+          <div style="font-size: 32px; margin-bottom: 20px;">Sprachkenntnisse</div>
+          Deutsch Muttersprache <br />
+          Serbisch/Kroatisch/Bosnisch Muttersprache <br />
+          Englisch Schulkenntnisse<br />
+          Französisch Schulkenntnisse<br />
+          <br />
+          <div style="font-size: 32px; margin-bottom: 20px;">Infoanlässe / Schnupperlehren</div>
+          24.04.2024 Google Informatiker Applikationsentwicklung <br>
+          18.04.2024 UBS Informatiker <br>
+          09.04.2024 BSI Informatiker Applikationsentwicklung
+          08.04.2024 BVG Informatiker Applikationsentwicklung <br>
+          04.04.-05.04.2024 AXA Informatiker Applikationsentwicklung <br>
+          15.03.2024 LGT Informatiker <br>
+          11.03.2024 Bolt Produktionsmechaniker <br>
+          05.03.2024 KMS Informatiker Applikationsentwicklung <br>
+          06.12.2023 Sunrise Informatiker<br>
+        </div>
+         <img
+            src="Adrians Portrait.jpg"
+            alt="Adrians Portrait"
+            class="Adrian_Lebenslauf_Bild"
+         />
+      </details>
+      <div class="to_small">
+        display zu klein!
+      </div>
+      <details>
+        <summary class="summary-object">Projekte</summary>
+        <div class="Text" style="margin-top: 30px;">
+          <div class="project-class">
+            <p>
+              Mein Traum, dass ich Informatiker werden wollte, begann damit, als ich erkannt hatte
+              dass ich sehr gerne und gut am Computer bin. Bevor ich angefangen habe zu programmieren,
+              habe ich mir das Zehnfingersystem beigebracht. In der Zwischenzeit habe ich noch die Prüfung (ECDL Typing Skills) bestanden.
+              Ursprünglich wollte ich Hacker werden, aber bereits nach einem Jahr, als ich angefangen habe zu programmieren,
+              wollte ich eigene Spiele entwickeln. So habe ich angefangen, mein 1. Spiel, mein 2. Spiel usw.
+              zu programmieren. Nun habe ich 8 Spiele, 2 auf Scratch, eins auf Unity mit C# und 5 mit Python programmiert.
+              Ausserdem habe ich noch ein paar Anwendungen programmiert, die auch auf Python sind.
+              Vor einigen Monaten habe ich angefangen, HTML und CSS zu lernen, um meine eigene Homepage zu programmieren.
+          </p>
+          </div>
+      </details>
+      <div class="to_small">
+        display zu klein!
+      </div>
+      <details open>
+        <summary class="summary-object">Kontakt</summary>
+        <p class="Text Kontakt_Text">
+          <a class="links Kontakte" href="Erste_Version_index=787878!=8x.html">&#x1F468;&#x1F3FB Meine Homepage</a> <br/>
+          &#x1F3E9 Ort: <a class="links Kontakte" href="https://maps.app.goo.gl/GGBnYhVWCLew747r8">8185 Winkel</a> <br/>
+          &#x1F3E1 Adresse: <a class="links Kontakte" href="https://maps.app.goo.gl/DVRRduGm3ErP8zKX6">Dorfstrasse 14b </a><br/>
+          &#x1F4DE Telefon: <a class="links Kontakte" href="tel:+41 76 612 70 34">+41 76 612 70 34</a> <br />
+          &#x1F4EB E-mail: <a class="links Kontakte" href="mailto:adriannovakovic10@gmail.com">adriannovakovic10@gmail.com<br/></a>
+        </p>
+      </details>
+      <div class="to_small">
+        display zu klein!
+      </div>
+  </body>
+</html>
